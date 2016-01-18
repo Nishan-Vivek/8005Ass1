@@ -7,9 +7,9 @@ try:
 except NameError:
     long = int
 
-nb_repeat = 10
+nb_repeat = 100
 tocalc =  2**59-1
-
+f = open('process.txt', 'a')
 
 def fac(n):
     step = lambda x: 1 + (x << 2) - ((x >> 1) << 1)
@@ -23,7 +23,8 @@ def fac(n):
 
 def a_complex_operation(*args):
     # fac(tocalc)
-    print("%s = %s" % (tocalc, fac(tocalc)))
+     f.write("%s" % fac(tocalc))
+
 
 t1 = time.time()
 if __name__ == '__main__':

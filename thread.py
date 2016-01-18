@@ -7,8 +7,9 @@ try:
 except NameError:
     long = int
 
-nb_repeat = 20
+nb_repeat = 100
 tocalc = 2**59-1
+f = open('thread.txt', 'w')
 
 def fac(n):
     step = lambda x: 1 + (x << 2) - ((x >> 1) << 1)
@@ -21,7 +22,8 @@ def fac(n):
     return q <= maxq and [q] + fac(n // q) or [n]
 
 def a_complex_operation(*args):
-    fac(tocalc)
+    # fac(tocalc)
+     f.write("%s" % fac(tocalc))
 
 t1 = time.time()
 threads = []
