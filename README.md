@@ -1,8 +1,6 @@
 # BCIT COMP8005 Assignment 1 - Threads and Processes
 Submitted 1-18-2016
 
-#TODO: Link to original docs
-
 ## Objective 
 
 Use multiple processes and threads on either the Windows or Linux
@@ -148,7 +146,7 @@ test.
 | threaded | 0.3619999886                                  | 0.7200000286 | 1.4429998398 | 3.6059999466 | 17.8910000324 | 35.7430000305 | 180.3659999370 |
 | process  | 0.4100000858                                  | 0.4119999409 | 0.4260001183 | 1.0420000553 | 5.0160000324  | 10.1750001907 | 49.6420001984  |
 
-#TODO: Chart
+![alt](/docs/chart.PNG)
 
 As can be seen from the above results there was no improvement in the
 time taken to complete the operations when using Python multi-threading
